@@ -20,6 +20,41 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Database (Postgres + Prisma)
+
+For local development, spin up Postgres with Docker:
+
+```bash
+docker compose up -d
+```
+
+Then add a `.env` file with:
+
+```bash
+DATABASE_URL="postgresql://portfolio:portfolio@localhost:5432/portfolio"
+```
+
+Then generate the Prisma client:
+
+```bash
+npx prisma generate
+```
+
+Push the schema to the local database:
+
+```bash
+npx prisma db push
+```
+
+Seed the database with dummy content:
+
+```bash
+npm run db:seed
+```
+
+If no database is configured, the app falls back to default content in
+`src/lib/portfolio-data.ts`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
