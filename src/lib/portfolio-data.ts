@@ -14,6 +14,9 @@ export const defaultPortfolio = {
       "B.Tech CSE, Babu Banarsi Das University (2026)",
       "Class 12: 72% · Sunbeam School, Ballia",
       "Class 10: 77.6% · Sunbeam School, Ballia",
+      "Certifications: Design Thinking (Vol 2), Internet of Things",
+      "Certifications: Identity & Access Management, IBM Cloud Fundamental",
+      "Certifications: Clean Coding, Data Analysis with Python, Blockchain Essentials",
     ],
   },
   socials: [
