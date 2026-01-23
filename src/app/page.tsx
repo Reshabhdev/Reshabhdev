@@ -10,11 +10,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { getPortfolioData } from "@/lib/portfolio";
+import { getPortfolioData, type PortfolioData } from "@/lib/portfolio";
 
 export default async function Home() {
   const { profile, socials, metrics, skills, projects, experiences } =
-    await getPortfolioData();
+    (await getPortfolioData()) as PortfolioData;
 
   return (
     <div className="min-h-screen bg-background text-foreground">

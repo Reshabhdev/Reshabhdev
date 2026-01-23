@@ -3,6 +3,8 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "@prisma/client";
 import { Pool } from "pg";
 
+export type PortfolioData = typeof defaultPortfolio;
+
 let prisma: PrismaClient | undefined;
 let pool: Pool | undefined;
 
@@ -15,7 +17,7 @@ const getPrisma = () => {
   return prisma;
 };
 
-export async function getPortfolioData() {
+export async function getPortfolioData(): Promise<PortfolioData> {
   if (!process.env.DATABASE_URL) {
     return defaultPortfolio;
   }
@@ -49,12 +51,18 @@ export async function getPortfolioData() {
       [] as { category: string; items: string[] }[]
     );
 
+    const normalizedProjects = projects.map((project) => ({
+      ...project,
+      href: project.href ?? "",
+      status: project.status ?? "",
+    }));
+
     return {
       profile,
       socials,
       metrics,
       skills: groupedSkills,
-      projects,
+      projects: normalizedProjects,
       experiences,
     };
   } catch (error) {
