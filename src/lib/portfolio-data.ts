@@ -47,6 +47,13 @@ export const defaultPortfolio = {
   ],
   projects: [
     {
+      name: "Career Recommendation System",
+      description: "An AI/ML-powered web app that suggests personalized career options based on user input. Integrates machine learning models to analyze user data and provide tailored career recommendations. Try it live!",
+      stack: ["AI", "Machine Learning", "Next.js", "TypeScript"],
+      href: "https://career-ai-app-iota.vercel.app/",
+      status: "AI/ML Project",
+    },
+    {
       name: "Desktop Dictionary",
       description: "A desktop dictionary app with fast word lookup.",
       stack: ["Python"],
