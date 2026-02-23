@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Rishabh Dev Singh | B.Tech CSE Student",
   description:
     "Minimal, engaging portfolio showcasing product-focused engineering, modern web apps, and Postgres-backed systems.",
+  verification: {
+    google: "24MuyQuAv16j5X8vFSHJUrFJG685rFiGU0cdSAX1q9A",
+  },
 };
 
 export default function RootLayout({
