@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     "Minimal, engaging portfolio showcasing product-focused engineering, modern web apps, and Postgres-backed systems.",
   verification: {
     google: "24MuyQuAv16j5X8vFSHJUrFJG685rFiGU0cdSAX1q9A",
+    other: {
+      "msvalidate.01": "3E81E6D03D1681668C12B6DC4616A4CF",
+    },
   },
 };
 
