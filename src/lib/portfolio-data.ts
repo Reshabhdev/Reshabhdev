@@ -47,6 +47,13 @@ export const defaultPortfolio = {
   ],
   projects: [
     {
+      name: "Gym AI App",
+      description: "An AI-powered gym application providing diet plan suggestions and detailed workout instructions with interactive visualizations and real-time video call integrations.",
+      stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+      href: "https://gym-app-qm5r.vercel.app/",
+      status: "Personal Project",
+    },
+    {
       name: "Career Recommendation System",
       description: "An AI/ML-powered web app that suggests personalized career options based on user input. Integrates machine learning models to analyze user data and provide tailored career recommendations. Try it live!",
       stack: ["AI", "Machine Learning", "Next.js", "TypeScript"],
