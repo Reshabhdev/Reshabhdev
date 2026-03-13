@@ -47,6 +47,13 @@ export const defaultPortfolio = {
   ],
   projects: [
     {
+      name: "Zoom Clone",
+      description: "A full-stack video conferencing application allowing users to create and join secure meetings.",
+      stack: ["Next.js", "TypeScript", "Tailwind CSS", "Clerk", "Stream"],
+      href: "https://zoom-clone-8d97.vercel.app/",
+      status: "Personal Project",
+    },
+    {
       name: "Gym AI App",
       description: "An AI-powered gym application providing diet plan suggestions and detailed workout instructions with interactive visualizations and real-time video call integrations.",
       stack: ["Next.js", "TypeScript", "Tailwind CSS"],
